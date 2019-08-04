@@ -17,12 +17,13 @@
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
-    <div id="random-Number">
-        <h2 class="random-Number heading2">0</h2>
+    <div class="random">
+        <h2 class="heading2" id="randomNumberDisplay">0</h2>
     </div>
     <div id="score">
-        <p>Wins: <span class="wins">0</span></p>
-        <p>Losses: <span class="losses">0</span></p>
+        <p class="winsText"></p>
+        <p>Wins: <span class="winsDisplay">0</span></p>
+        <p>Losses: <span class="lossesDisplay">0</span></p>
     </div>
     <div class="crystals">
         <div id="redCrystal" class="crystal"><img src="assets/images/redCrystal.PNG" alt="red crystal"></div>
@@ -31,11 +32,11 @@
         <div id="greenCrystal" class="crystal"><img src="assets/images/greenCrystal.PNG" alt="green crystal"></div>
     </div>
     <div class="total-score">
-        <p >Your total score is: <span id="totalScoreDisplay">0</span></p>
+        <p >Your total score is:</p>
     </div>
 
-    <div class="player-score">
-        <p id="playerScoreDisplay" class="heading2">0</p>
+    <div class="total-score">
+        <p id="totalScoreDisplay" class="heading2">0</p>
     </div>
     
     <script src="/assets/javascript/game.js"></script>

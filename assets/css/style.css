@@ -35,7 +35,7 @@ p {
     text-align: left;
 }
 
-#random-Number {
+.random {
     width:200px;
     height: 130px;
     background: darkcyan;
