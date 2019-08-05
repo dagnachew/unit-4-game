@@ -25,7 +25,7 @@ let lossesDisplay = document.querySelector(".lossesDisplay");
 let wins = 0;
 let losses = 0;
 let totalScore = 0
-gameOver = false;
+// gameOver = false;
 
 function reset() {
     randomNumberOne = Math.floor(Math.random() * ((120-19)+1) + 19);
@@ -73,6 +73,38 @@ redCrystal.addEventListener("click", function() {
         }
 })
 
+blueCrystal.addEventListener("click", function() {
+    totalScore = totalScore + randomNumberBlue;
+    totalScoreDisplay.textContent = totalScore;
+
+        if(totalScore === randomNumberOne) {
+            winner();
+        } else if (totalScore > randomNumberOne) {
+            loser();
+        }
+});
+
+yellowCrystal.addEventListener("click", function() {
+    totalScore = totalScore + randomNumberYellow;
+    totalScoreDisplay.textContent = totalScore;
+
+        if(totalScore === randomNumberOne) {
+            winner();
+        } else if (totalScore > randomNumberOne) {
+            loser();
+        }
+});
+
+greenCrystal.addEventListener("click", function() {
+    totalScore = totalScore + randomNumberGreen;
+    totalScoreDisplay.textContent = totalScore;
+
+        if(totalScore === randomNumberOne) {
+            winner();
+        } else if (totalScore > randomNumberOne) {
+            loser();
+        }
+});
 	
    // Pseudo code
    // keep adding Crystalvalue until totalScore equals randomNumberOne 
@@ -82,18 +114,3 @@ redCrystal.addEventListener("click", function() {
         // if totalScore gets greater than randomNumberOne, player loses
             //add 1 to losses
             //game resets
-
-    
-
-
-blueCrystal.addEventListener("click", function() {
-    console.log(randomNumberBlue);
-});
-
-yellowCrystal.addEventListener("click", function() {
-    console.log(randomNumberYellow);
-});
-
-greenCrystal.addEventListener("click", function() {
-    console.log(randomNumberGreen);
-});
