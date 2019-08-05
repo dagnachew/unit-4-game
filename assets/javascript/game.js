@@ -25,7 +25,7 @@ let lossesDisplay = document.querySelector(".lossesDisplay");
 let wins = 0;
 let losses = 0;
 let totalScore = 0
-// gameOver = false;
+
 
 function reset() {
     randomNumberOne = Math.floor(Math.random() * ((120-19)+1) + 19);
@@ -51,11 +51,6 @@ function loser() {
     lossesDisplay.textContent = losses;
     reset();
 }
-
-// let redCrystalvalue = randomNumberRed;
-// let blueCrystalvalue = randomNumberBlue;
-// let yellowCrystalvalue = randomNumberYellow;
-// let greenCrystalvalue = randomNumberGreen;
 
 
 randomDisplay.textContent = randomNumberOne;
@@ -105,12 +100,3 @@ greenCrystal.addEventListener("click", function() {
             loser();
         }
 });
-	
-   // Pseudo code
-   // keep adding Crystalvalue until totalScore equals randomNumberOne 
-        //if totalScore equals randomNumberOne, player wins
-            //add 1 to Wins
-            //game resets
-        // if totalScore gets greater than randomNumberOne, player loses
-            //add 1 to losses
-            //game resets
