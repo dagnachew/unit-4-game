@@ -39,7 +39,7 @@ function winner() {
     document.querySelector(".winsText").textContent = "You Won";
     wins++;
     winsDisplay.textContent = wins;
-    lossesDisplay.classList.add("winner")
+    winsDisplay.classList.add("winner");
     reset();
 }
 
