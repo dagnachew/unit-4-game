@@ -1,6 +1,10 @@
 body {
     margin: 10px;
-    /* background: url(/assets/images/photo-1475965894430-b05c9d13568a.jpg); */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
 * {
@@ -21,5 +25,21 @@ body {
     .instructions {
         display: none;
     }
+    .h1, h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
 
+    .h2, h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    .h4, h4 {
+        font-size: 1.2rem;
+    }
+
+    .col-lg-4 {
+        margin-bottom: 5px;
+    }
 }
