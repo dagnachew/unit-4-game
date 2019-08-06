@@ -12,7 +12,6 @@ let randomNumberYellow = Math.floor(Math.random() * ((12-1)+1) + 1);  // returns
 let randomNumberGreen = Math.floor(Math.random() * ((12-1)+1) + 1);  // returns a random integer for green
 // console.log(randomNumberTwo);
 
-
 // select the displays on html page
 let randomDisplay = document.querySelector("#randomNumberDisplay");
 let totalScoreDisplay = document.querySelector("#totalScoreDisplay");
@@ -20,12 +19,10 @@ let winsDisplay = document.querySelector(".winsDisplay");
 let lossesDisplay = document.querySelector(".lossesDisplay");
 
 
-
 // beginning of game
 let wins = 0;
 let losses = 0;
 let totalScore = 0
-
 
 function reset() {
     randomNumberOne = Math.floor(Math.random() * ((120-19)+1) + 19);
@@ -42,6 +39,7 @@ function winner() {
     document.querySelector(".winsText").textContent = "You Won";
     wins++;
     winsDisplay.textContent = wins;
+    lossesDisplay.classList.add("winner")
     reset();
 }
 
@@ -49,9 +47,9 @@ function loser() {
     document.querySelector(".winsText").textContent = "You Lost";
     losses++;
     lossesDisplay.textContent = losses;
+    lossesDisplay.classList.add("loser");
     reset();
 }
-
 
 randomDisplay.textContent = randomNumberOne;
 
@@ -66,7 +64,7 @@ redCrystal.addEventListener("click", function() {
         } else if (totalScore > randomNumberOne) {
             loser();
         }
-})
+});
 
 blueCrystal.addEventListener("click", function() {
     totalScore = totalScore + randomNumberBlue;

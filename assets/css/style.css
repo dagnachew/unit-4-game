@@ -6,84 +6,20 @@ body {
 * {
     box-sizing: border-box;
 }
-.heading1 {
-    background: brown;
-    color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    padding: 20px 5px;
-    width: 320px;
-    margin-bottom: 15px;
-}
 
-.heading2 {
-    font-size: 36px;
-}
-
-.instructions {
-    background: #fff;
-    color: green;
-    padding: 20px 5px;
-    line-height: 1.4;
+.winner {
+    color: yellow;
     font-weight: bold;
-    width: 500px;
-    display: block;
 }
 
-p {
-    margin-bottom: 20px;
-    text-align: left;
+.loser {
+    color: red;
+    font-weight: bold;
 }
 
-.random {
-    width:200px;
-    height: 130px;
-    background: darkcyan;
-    margin: 10px 10px 10px 0;
-    padding: 10px;
-    display: inline-block;
-    float: left;
-}
+@media ( max-width: 600px){
+    .instructions {
+        display: none;
+    }
 
-#score {
-    width: 90px;
-    float: left;
-    margin: 10px 10px 10px 0;
-    background: aqua;
-    height: 130px;
-    padding: 10px;
-}
-
-.crystals {
-    clear: both;
-    margin-bottom: 100px;
-    
-}
-.crystal {
-    width: 60px;
-    height: 150px;
-    background-size: cover;
-    float: left;
-    margin-right: 20px;
-}
-
-.total-score {
-    width: 200px;
-    background: darkcyan;
-    color: #fff;
-    padding: 10px;
-    clear: both;
-    margin-top: 20px;
-}
-.total-score p {
-    margin-bottom: 0;
-}
-
-.player-score {
-    width: 200px;
-    background: darkcyan;
-    color: #fff;
-    padding: 10px;
-    margin-top: 20px;
-    height: 130px;
 }
