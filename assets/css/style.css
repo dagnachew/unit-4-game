@@ -54,8 +54,12 @@ h1, h2, h3 {
         margin-top: 0;
     }
 
+    div#score.row.pt-md-5 {
+        background: #dc3545;
+    }
+
     .col-lg-4 {
-        width: 50%;
+        width: 33.3333%;
         float: left;
         padding-left: 0;
     }
