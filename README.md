@@ -7,6 +7,8 @@ The value of each crystal is hidden from the player until it is clicked on.
 
 Each time when the game starts, the game will change the values of each crystal.
 
-https://dagnachew.github.io/unit-4-game/
+Github Repo: https://github.com/dagnachew/unit-4-game
+
+Link to github pages: https://dagnachew.github.io/unit-4-game/
 
 Link to portfolio page: https://dagnachew.github.io/Responsive-Portfolio/portfolio.html
